@@ -1,19 +1,20 @@
-
+PImage face;
 void setup() {
 
-    PImage face = loadImage("googly_eyes.jpg");
-    background(face);
-   
-    size(1200,800);
+     face = loadImage("googly_eyes.jpg");
+ 
+    size(800,600);
     face.resize(800,600);
 }
 
 void draw() {
+     background(face);
+   
 fill(#ffffff);
-  ellipse(550,400,150,150);
+  ellipse(375,300,120,100);
   
     fill(#000000);
-  ellipse(550,400,50,50);
+  ellipse(mouseX,mouseY,50,50);
 
   
   
