@@ -8,6 +8,7 @@ image(tail, mouseX, mouseY);
 size(800, 590);     //replace width, height with your picture's dimensions
 tail.resize(150, 200);     //replace width, height with your tail's dimensions
 image(tail, mouseX-10, mouseY-20);
+woohoo = minim.loadSample("woohoo.wav");
 }
 void draw(){
   background (#000000);
@@ -21,7 +22,7 @@ if(dist(0, 0, mouseX, mouseY) < 30){
 }
 if(dist(700, 245, mouseX, mouseY) < 30){
   background(donkey);
-
+playWoohoo();
 }
 
 }
@@ -30,3 +31,7 @@ void playWoohoo() {
      woohoo.trigger();
    
 }
+import ddf.minim.*;
+Minim minim = new Minim(this); 
+AudioSample doh;
+AudioSample woohoo;
