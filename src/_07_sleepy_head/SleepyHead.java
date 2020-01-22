@@ -18,8 +18,9 @@ public class SleepyHead {
 		 * JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head",
 		 * JOptionPane.YES_NO_OPTION);
 		 */
-		int bob = JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
 		int bo = JOptionPane.showConfirmDialog(null, "Is it a vacation?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
+		int bob = JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
+		
 		System.out.println(bob);
 		System.out.println(bo);
 		if (bob == 0) {
@@ -43,18 +44,22 @@ else {
 		 * If it’s a weekday, print  get up lazybones!�? 
 		 * If it is a weekday, and we are on vacation, print “sleep in�?.
 		 */
-	if(isVacation = true && isWeekday == false) {
+	if(isVacation == true && isWeekday == false) {
 		System.out.println("sleep in.........");
 	}
 	
 	
 	
-		if(isVacation = false && isWeekday == false) {
+		if(isVacation == false && isWeekday == false) {
 			System.out.println("sleep in.........");
 		}
 	
-		if(isWeekday == true) {
+		if(isWeekday == true && isVacation == false) {
 	System.out.println("wake up LAzyBOnE!");
+		}
+
+		if(isVacation == true && isWeekday == true) {
+			System.out.println("sleep in.........");
 		}
 	}
 	
